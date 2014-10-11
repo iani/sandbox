@@ -43,7 +43,7 @@ ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF S
 DAMAGE.
 " />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>My TiddlyWiki — a non-linear personal web notebook</title>
+<title>Sandbox — a TiddlyWiki for learning by doing</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
 
 </head>
@@ -129,6 +129,10 @@ Error message and password prompt
 
 <li>$:/core</li>
 
+<li>$:/core/ui/SideBarLists</li>
+
+<li>$:/DefaultTiddlers</li>
+
 <li>$:/isEncrypted</li>
 
 <li>$:/languages/de-AT</li>
@@ -145,6 +149,10 @@ Error message and password prompt
 
 <li>$:/languages/zh-Hant</li>
 
+<li>$:/palette</li>
+
+<li>$:/palettes/Blue</li>
+
 <li>$:/plugins/tiddlywiki/browser-sniff</li>
 
 <li>$:/plugins/tiddlywiki/cecily</li>
@@ -154,6 +162,10 @@ Error message and password prompt
 <li>$:/plugins/tiddlywiki/googleanalytics</li>
 
 <li>$:/plugins/tiddlywiki/nodewebkitsaver</li>
+
+<li>$:/SiteSubtitle</li>
+
+<li>$:/SiteTitle</li>
 
 <li>$:/StoryList</li>
 
@@ -175,7 +187,17 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
+<li>About</li>
+
+<li>Contents</li>
+
+<li>GettingStarted</li>
+
+<li>html format test</li>
+
 <li>Test</li>
+
+<li>Test new page (KT)</li>
 
 </ul>
 </p>
@@ -188,7 +210,7 @@ Error message and password prompt
 
 <div id="storeArea" style="display:none;">
 <div title="$:/config/OriginalTiddlerPaths" type="application/json">
-<pre>{&quot;$:/theme&quot;:&quot;../../pages/tiddlers/$__theme.tid&quot;,&quot;Test&quot;:&quot;../../pages/tiddlers/Test.tid&quot;,&quot;$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel&quot;:&quot;$__config_PageControlButtons_Visibility_$__core_ui_Buttons_control-panel.tid&quot;,&quot;$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler&quot;:&quot;$__config_PageControlButtons_Visibility_$__core_ui_Buttons_new-tiddler.tid&quot;,&quot;$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit&quot;:&quot;$__config_ViewToolbarButtons_Visibility_$__core_ui_Buttons_edit.tid&quot;,&quot;$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/info&quot;:&quot;$__config_ViewToolbarButtons_Visibility_$__core_ui_Buttons_info.tid&quot;}</pre>
+<pre>{&quot;$:/DefaultTiddlers&quot;:&quot;../../pages/tiddlers/$__DefaultTiddlers.tid&quot;,&quot;$:/SiteSubtitle&quot;:&quot;../../pages/tiddlers/$__SiteSubtitle.tid&quot;,&quot;$:/SiteTitle&quot;:&quot;../../pages/tiddlers/$__SiteTitle.tid&quot;,&quot;$:/core/ui/SideBarLists&quot;:&quot;../../pages/tiddlers/$__core_ui_SideBarLists.tid&quot;,&quot;$:/palette&quot;:&quot;../../pages/tiddlers/$__palette.tid&quot;,&quot;$:/palettes/Blue&quot;:&quot;../../pages/tiddlers/$__palettes_Blue.tid&quot;,&quot;$:/theme&quot;:&quot;../../pages/tiddlers/$__theme.tid&quot;,&quot;About&quot;:&quot;../../pages/tiddlers/About.tid&quot;,&quot;Contents&quot;:&quot;../../pages/tiddlers/Contents.tid&quot;,&quot;GettingStarted&quot;:&quot;../../pages/tiddlers/GettingStarted.tid&quot;,&quot;Test new page (KT)&quot;:&quot;../../pages/tiddlers/Test new page (KT).tid&quot;,&quot;Test&quot;:&quot;../../pages/tiddlers/Test.tid&quot;,&quot;html format test&quot;:&quot;../../pages/tiddlers/html format test.tid&quot;,&quot;$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel&quot;:&quot;$__config_PageControlButtons_Visibility_$__core_ui_Buttons_control-panel.tid&quot;,&quot;$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler&quot;:&quot;$__config_PageControlButtons_Visibility_$__core_ui_Buttons_new-tiddler.tid&quot;,&quot;$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit&quot;:&quot;$__config_ViewToolbarButtons_Visibility_$__core_ui_Buttons_edit.tid&quot;,&quot;$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/info&quot;:&quot;$__config_ViewToolbarButtons_Visibility_$__core_ui_Buttons_info.tid&quot;}</pre>
 </div>
 <div created="20141011102545832" modified="20141011102544787" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel" type="text/vnd.tiddlywiki">
 <pre>hide</pre>
@@ -4732,6 +4754,46 @@ Error message and password prompt
         }
     }
 }</pre>
+</div>
+<div created="20141005091820929" modified="20141005091832773" title="$:/core/ui/SideBarLists" type="text/vnd.tiddlywiki">
+<pre>&lt;div class=&quot;tc-sidebar-lists&quot;&gt;
+
+&lt;div class=&quot;tc-search&quot;&gt;
+&lt;$edit-text tiddler=&quot;$:/temp/search&quot; type=&quot;search&quot; tag=&quot;input&quot;/&gt;
+&lt;$reveal state=&quot;$:/temp/search&quot; type=&quot;nomatch&quot; text=&quot;&quot;&gt;
+&lt;$linkcatcher to=&quot;$:/temp/search&quot;&gt;
+&lt;$link to=&quot;&quot; class=&quot;tc-btn-invisible&quot;&gt;{{$:/core/images/close-button}}&lt;/$link&gt;
+&lt;/$linkcatcher&gt;
+&lt;/$reveal&gt;
+&lt;$reveal state=&quot;$:/temp/search&quot; type=&quot;match&quot; text=&quot;&quot;&gt;&amp;nbsp;&lt;$link to=&quot;$:/AdvancedSearch&quot; tooltip={{$:/language/Buttons/AdvancedSearch/Hint}} aria-label={{$:/language/Buttons/AdvancedSearch/Caption}} class=&quot;tc-btn-invisible&quot;&gt;&amp;hellip;&lt;/$link&gt;
+&lt;/$reveal&gt;
+&lt;/div&gt;
+
+&lt;$reveal state=&quot;$:/temp/search&quot; type=&quot;nomatch&quot; text=&quot;&quot;&gt;
+
+&lt;div class=&quot;tc-search-results&quot;&gt;
+
+{{$:/language/Search/Matches}}
+
+&lt;$list filter=&quot;[!is[system]search{$:/temp/search}sort[title]limit[250]]&quot; template=&quot;$:/core/ui/ListItemTemplate&quot;/&gt;
+
+&lt;/div&gt;
+
+&lt;/$reveal&gt;
+
+&lt;$reveal state=&quot;$:/temp/search&quot; type=&quot;match&quot; text=&quot;&quot;&gt;
+
+&lt;&lt;tabs &quot;[all[shadows+tiddlers]tag[$:/tags/SideBar]!has[draft.of]]&quot; &quot;Contents&quot; &quot;$:/state/tab/sidebar&quot;&gt;&gt;
+
+&lt;/$reveal&gt;
+
+&lt;/div&gt;
+</pre>
+</div>
+<div created="20141005091249521" modified="20141005091251096" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
+<pre>Contents
+GettingStarted
+</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -14516,6 +14578,110 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20141006214037015" modified="20141006231519297" title="$:/palette" type="text/vnd.tiddlywiki">
+<pre>$:/palettes/Blanca</pre>
+</div>
+<div created="20141006214449615" description="A blue theme" modified="20141006214448430" name="Blue" tags="$:/tags/Palette" title="$:/palettes/Blue" type="application/x-tiddler-dictionary">
+<pre>alert-background: #ffe476
+alert-border: #b99e2f
+alert-highlight: #881122
+alert-muted-foreground: #b99e2f
+background: #fff
+blockquote-bar: &lt;&lt;colour muted-foreground&gt;&gt;
+code-background: #f7f7f9
+code-border: #e1e1e8
+code-foreground: #dd1144
+dirty-indicator: #ff0000
+download-background: #34c734
+download-foreground: &lt;&lt;colour foreground&gt;&gt;
+dragger-background: &lt;&lt;colour foreground&gt;&gt;
+dragger-foreground: &lt;&lt;colour background&gt;&gt;
+dropdown-background: &lt;&lt;colour background&gt;&gt;
+dropdown-border: &lt;&lt;colour muted-foreground&gt;&gt;
+dropdown-tab-background-selected: #fff
+dropdown-tab-background: #ececec
+dropzone-background: rgba(0,200,0,0.7)
+external-link-background-hover: inherit
+external-link-background-visited: inherit
+external-link-background: inherit
+external-link-foreground-hover: inherit
+external-link-foreground-visited: #0000aa
+external-link-foreground: #0000ee
+foreground: #333353
+message-background: #ecf2ff
+message-border: #cfd6e6
+message-foreground: #547599
+modal-backdrop: &lt;&lt;colour foreground&gt;&gt;
+modal-background: &lt;&lt;colour background&gt;&gt;
+modal-border: #999999
+modal-footer-background: #f5f5f5
+modal-footer-border: #dddddd
+modal-header-border: #eeeeee
+muted-foreground: #999999
+notification-background: #ffffdd
+notification-border: #999999
+page-background: #f9f5f1
+pre-background: #f5f5f5
+pre-border: #cccccc
+primary: #5778d8
+sidebar-button-foreground: &lt;&lt;colour foreground&gt;&gt;
+sidebar-controls-foreground-hover: #000000
+sidebar-controls-foreground: #ffffff
+sidebar-foreground-shadow: rgba(255,255,255, 0.8)
+sidebar-foreground: #acacac
+sidebar-muted-foreground-hover: #444444
+sidebar-muted-foreground: #c0c0c0
+sidebar-tab-background-selected: &lt;&lt;colour page-background&gt;&gt;
+sidebar-tab-background: &lt;&lt;colour tab-background&gt;&gt;
+sidebar-tab-border-selected: &lt;&lt;colour tab-border-selected&gt;&gt;
+sidebar-tab-border: &lt;&lt;colour tab-border&gt;&gt;
+sidebar-tab-divider: &lt;&lt;colour tab-divider&gt;&gt;
+sidebar-tab-foreground-selected: 
+sidebar-tab-foreground: &lt;&lt;colour tab-foreground&gt;&gt;
+sidebar-tiddler-link-foreground-hover: #444444
+sidebar-tiddler-link-foreground: #5959c0
+static-alert-foreground: #aaaaaa
+tab-background-selected: &lt;&lt;colour background&gt;&gt;
+tab-background: #ccccdd
+tab-border-selected: #ccccdd
+tab-border: #cccccc
+tab-divider: #d8d8d8
+tab-foreground-selected: &lt;&lt;colour tab-foreground&gt;&gt;
+tab-foreground: #666666
+table-border: #dddddd
+table-footer-background: #a8a8a8
+table-header-background: #f0f0f0
+tag-background: #eeeeff
+tag-foreground: #000
+tiddler-background: &lt;&lt;colour background&gt;&gt;
+tiddler-border: &lt;&lt;colour background&gt;&gt;
+tiddler-controls-foreground-hover: #666666
+tiddler-controls-foreground-selected: #444444
+tiddler-controls-foreground: #cccccc
+tiddler-editor-background: #f8f8f8
+tiddler-editor-border-image: #ffffff
+tiddler-editor-border: #cccccc
+tiddler-editor-fields-even: #e0e8e0
+tiddler-editor-fields-odd: #f0f4f0
+tiddler-info-background: #ffffff
+tiddler-info-border: #dddddd
+tiddler-info-tab-background: #ffffff
+tiddler-link-background: &lt;&lt;colour background&gt;&gt;
+tiddler-link-foreground: &lt;&lt;colour primary&gt;&gt;
+tiddler-subtitle-foreground: #c0c0c0
+tiddler-title-foreground: #5959c0
+toolbar-new-button: #5eb95e
+toolbar-options-button: rgb(128, 88, 165)
+toolbar-save-button: #0e90d2
+toolbar-info-button: #0e90d2
+toolbar-edit-button: rgb(243, 123, 29)
+toolbar-close-button: #dd514c
+toolbar-delete-button: #dd514c
+toolbar-cancel-button: rgb(243, 123, 29)
+toolbar-done-button: #5eb95e
+untagged-background: #999999
+very-muted-foreground: #888888</pre>
+</div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="Browser sniffing for TiddlyWiki" list="readme" plugin-type="plugin" title="$:/plugins/tiddlywiki/browser-sniff" type="application/json" version="5.1.2">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -14602,7 +14768,13 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div list="GettingStarted" title="$:/StoryList">
+<div created="20141005090838768" creator="iani" modified="20141005090845000" modifier="iani" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki">
+<pre>a TiddlyWiki for learning by doing</pre>
+</div>
+<div created="20141005090835993" creator="iani" modified="20141005090836922" modifier="iani" title="$:/SiteTitle" type="text/vnd.tiddlywiki">
+<pre>Sandbox</pre>
+</div>
+<div list="Contents GettingStarted" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -14619,8 +14791,8 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20141011094910872" modified="20141011100059142" title="$:/theme" type="text/vnd.tiddlywiki">
-<pre>$:/themes/tiddlywiki/snowwhite</pre>
+<div created="20141005090742652" modified="20141005090741392" title="$:/theme" type="text/vnd.tiddlywiki">
+<pre>$:/themes/tiddlywiki/starlight</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/snowwhite" description="Experimental theme with a centred text column" name="Centralised" plugin-type="theme" title="$:/themes/tiddlywiki/centralised" type="application/json" version="5.1.2">
 <pre>{
@@ -14763,8 +14935,38 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20141011094926314" modified="20141011103149328" title="Test" type="text/vnd.tiddlywiki">
-<pre>Testing 1, 2, 3. Edited.</pre>
+<div created="20141005092349722" modified="20141008164940643" tags="contents" title="About" type="text/vnd.tiddlywiki">
+<pre>A wiki for experimenting with TW5</pre>
+</div>
+<div created="20141005091020736" creator="iani" list-before="$:/core/ui/SideBar/Open" modified="20141005092412074" modifier="iani" tags="$:/tags/SideBar" title="Contents" type="text/vnd.tiddlywiki">
+<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
+&lt;&lt;toc-selective-expandable &quot;contents&quot;&gt;&gt;
+&lt;/div&gt;</pre>
+</div>
+<div created="20141005092454436" modified="20141005092454436" tags="contents" title="GettingStarted" type="text/vnd.tiddlywiki">
+<pre>Welcome to TiddlyWiki, the non-linear personal web notebook.
+
+To get started, first verify that you can save changes successfully - see http://tiddlywiki.com/ for detailed instructions.
+
+Then you can:
+
+* Create new tiddlers using the 'plus' button in the sidebar
+* Visit the [[control panel|$:/ControlPanel]] using the 'cog' button in the sidebar to customise your wiki
+** Stop this message appearing by changing the default tiddlers under the ''Basics'' tab
+* Save changes using the 'download' button in the sidebar
+* Learn more about [[WikiText|http://tiddlywiki.com/static/WikiText.html]]
+</pre>
+</div>
+<div created="20141006071217740" modified="20141006071343450" title="html format test" type="text/html">
+<pre>&lt;p&gt;This is a test.&lt;br&gt;
+&lt;b&gt;In bold&lt;/b&gt;, and in plain.&lt;br&gt;
+&lt;p&gt;And a new paragraph.</pre>
+</div>
+<div created="20141008165319988" modified="20141008165328833" title="Test" type="text/vnd.tiddlywiki">
+<pre>test</pre>
+</div>
+<div created="20141008170001469" modified="20141008170011541" title="Test new page (KT)" type="text/vnd.tiddlywiki">
+<pre></pre>
 </div>
 
 </div>
