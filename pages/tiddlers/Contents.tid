@@ -1,0 +1,12 @@
+created: 20141005091020736
+creator: iani
+list-before: $:/core/ui/SideBar/Open
+modified: 20141005092412074
+modifier: iani
+tags: $:/tags/SideBar
+title: Contents
+type: text/vnd.tiddlywiki
+
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "contents">>
+</div>

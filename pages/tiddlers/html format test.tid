@@ -1,0 +1,8 @@
+created: 20141006071217740
+modified: 20141006071343450
+title: html format test
+type: text/html
+
+<p>This is a test.<br>
+<b>In bold</b>, and in plain.<br>
+<p>And a new paragraph.
